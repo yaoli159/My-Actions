@@ -67,8 +67,8 @@ def send_request(path: string, method: string, body: string = None, token: strin
 
 def sign_in(email: string, password: string) -> string:
     body = {
-        "email": email,
-        "password": password
+        "email": 1804301741,
+        "password": yujie123
     }
     return send_request(sign_in_path, POST, json.dumps(body))["data"]["token"]
 
@@ -93,3 +93,5 @@ if __name__ == '__main__':
 
 if SEND_KEY == '':
     sendNotify.send(title=u"哔咔漫画自动打哔咔", msg="【哔咔漫画自动签到】\n" + msg)
+
+    
